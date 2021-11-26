@@ -14,7 +14,7 @@ def build_config() -> SparkConf:
     return conf
 
 
-def mara_spark_session() -> SparkSession:
+def spark_session() -> SparkSession:
     """Get or creates the Mara Spark session"""
     return SparkSession.builder \
         .config(conf=build_config()) \
