@@ -22,7 +22,7 @@ def my_pyspark_function(storage_alias: str, read_filename: str, write_filename) 
     import mara_spark.session
     from mara_spark.storages import spark_storage_path
 
-    spark = mara_spark.session.mara_spark_session()
+    spark = mara_spark.session.spark_session()
 
     df = spark.read.option("header", True) \
         .csv(path=spark_storage_path(storage_alias, file_name=read_filename))
@@ -87,7 +87,7 @@ write_filename = sys.argv[3]
 
 # here your main pyspark code starts
 
-spark = mara_spark.session.mara_spark_session()
+spark = mara_spark.session.spark_session()
 
 df = spark.read.option("header", True) \
     .csv(path=spark_storage_path(storage_alias, file_name=read_filename))
