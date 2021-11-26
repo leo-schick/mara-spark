@@ -1,0 +1,1 @@
+All files in this directory ara maintained inside the the `mara_spark` package ([https://github.com/mara/mara-spark/blob/master/.scripts/](https://github.com/mara/mara-spark/blob/master/.scripts/)) and automatically synced to project code.

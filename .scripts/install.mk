@@ -6,8 +6,9 @@ spark-hadoop-version ?= 2.7
 mara-spark-scripts-dir := $(dir $(lastword $(MAKEFILE_LIST)))
 
 # where mara-spark is installed relative to the project root
-mara-metabase-dir ?= packages/mara-spark
+mara-spark-dir ?= packages/mara-spark
 
+setup-spark: .copy-mara-spark-scripts
 
 install-spark:
 # sudo apt install default-jdk scala -y
