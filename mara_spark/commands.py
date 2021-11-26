@@ -40,7 +40,7 @@ def _HadoopMovePartFile(local_path, file_extension: str):
     return True
 
 
-def HadoopMovePartFileCommand(storage_alias: str, path: str, file_extension: str) -> Command:
+def HadoopMovePartFile(storage_alias: str, path: str, file_extension: str) -> Command:
     """
     Returns a command which moves the part file into the local path.
 
