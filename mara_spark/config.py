@@ -18,8 +18,3 @@ def spark_additional_config() -> [(str, str)]:
         ['spark.driver.extraClassPath', pathlib.Path.cwd() / '.spark/jars/mssql-jdbc-9.4.0.jre11.jar')]
     """
     return []
-
-
-def external_spark_url():
-    """The URL under which the Spark master website can be reached by users"""
-    return 'http://localhost:8080'

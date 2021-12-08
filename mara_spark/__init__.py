@@ -4,16 +4,13 @@ def MARA_CONFIG_MODULES():
     return [config]
 
 def MARA_FLASK_BLUEPRINTS():
-    from . import views
-    return [views.blueprint]
+    return []
 
 def MARA_CLICK_COMMANDS():
     return []
 
 def MARA_ACL_RESOURCES():
-    from .views import acl_resource
-    return {'Spark': acl_resource}
+    return {}
 
 def MARA_NAVIGATION_ENTRIES():
-    from . import views
-    return {'Spark': views.navigation_entry()}
+    return {}
