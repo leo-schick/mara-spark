@@ -1,7 +1,12 @@
 
 def spark_app_name():
-    """The name displayed in the mara app"""
-    return 'Mara Spark'
+    """
+    The name displayed in the mara app.
+    
+    It is possible to extend the name when building the spark session.
+    If used, this here is the prefix to the mara app name
+    """
+    return 'Mara'
 
 
 def spark_master():
